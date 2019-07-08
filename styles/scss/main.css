@@ -101,7 +101,7 @@ img {
 #secondary-header,
 #main-header {
   color: #f4f4f4;
-  background: url("../../../img/showcase.jpg") no-repeat center right/cover;
+  background: url("../../img/showcase.jpg") no-repeat center right/cover;
 }
 #secondary-header .container nav,
 #main-header .container nav {
