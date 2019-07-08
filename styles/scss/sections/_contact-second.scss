@@ -1,0 +1,8 @@
+#contact-second {
+  @extend %section-shared;
+  background-color: $dark-color;
+  color: text-color($dark-color);
+  & i {
+    color: text-color($dark-color) !important;
+  }
+}

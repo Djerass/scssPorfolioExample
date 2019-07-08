@@ -1,0 +1,26 @@
+#about-second {
+  background-color: $dark-color;
+  color: text-color($dark-color);
+  text-align: center;
+  .container {
+    padding-bottom: 4rem;
+  }
+  h2 {
+    font-size: 2rem;
+    margin-top: 3rem;
+  }
+  h4 {
+    text-align: left;
+  }
+  .progress {
+    height: 1.2rem;
+    background-color: $medium-color;
+    margin-bottom: 0.5rem;
+    border-radius: 5px;
+    div {
+      background-color: $main-color;
+      height: 100%;
+      border-radius: 5px;
+    }
+  }
+}

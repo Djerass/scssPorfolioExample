@@ -1,0 +1,40 @@
+.container {
+  max-width: $max-width;
+  padding: 1rem 0;
+  margin: 0 auto;
+}
+
+.btn {
+  display: inline-block;
+  padding: 1rem 2rem;
+  transition: 500ms background-color,color;
+  cursor: pointer;
+  &-light {
+    background-color: $light-color;
+    color: text-color($light-color);
+    &:hover {
+      background-color: $main-color;
+      color: text-color($main-color);
+    }
+  }
+  &-dark {
+    background-color: $dark-color;
+    color: text-color($dark-color);
+    &:hover {
+      background-color: $main-color;
+      color: text-color($main-color);
+    }
+  }
+  &-submit {
+    border: none;
+    outline: none;
+  }
+}
+
+.bottom-line {
+  display: inline-block;
+  background-color: $main-color;
+  width: 3rem;
+  height: 2px;
+  margin: 1rem;
+}

@@ -1,0 +1,22 @@
+#about-first{
+  @extend %section-shared;
+  h2 {
+    margin-top: 2rem;
+    font-size: 2rem;
+  }
+  .container > p {
+    font-size: 1.2rem;
+  }
+  .about-content {
+    margin-top: 2rem;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 1rem;
+    .bio {
+      padding-top: 1rem;
+      grid-column: 2/span 2;
+      background-color: $light-color;
+      border-left: 2px solid $main-color;
+    }
+  }
+}

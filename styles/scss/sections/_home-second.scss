@@ -1,0 +1,25 @@
+#home-second {
+  display: grid;
+  text-align: center;
+  grid-template-columns: repeat(4,1fr);
+  div {
+    padding: 4rem 0;
+    &:nth-child(2n) {
+      background-color: $medium-color;
+    }
+    &:nth-child(2n + 1) {
+      background-color: $light-color
+    }
+    p {
+      font-weight: bold;
+      font-size: 2rem;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  #home-second {
+    grid-template-columns: repeat(2,1fr);
+  }
+
+}

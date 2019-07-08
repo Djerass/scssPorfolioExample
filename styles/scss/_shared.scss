@@ -1,0 +1,16 @@
+%section-shared {
+  text-align: center;
+  .specials {
+    margin-top: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    & i {
+      color: $main-color;
+    }
+    & div {
+      flex: 1;
+      padding: 1rem 0.5rem;
+      line-height: 1.6;
+    }
+  }
+}

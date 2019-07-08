@@ -1,0 +1,23 @@
+#main-footer {
+  background-color: $dark-color;
+  color: text-color($dark-color);
+  & .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    & .social {
+      display: flex;
+      justify-content: space-between;
+      & div {
+        padding: 0.5rem;
+        border: 2px solid $light-color;
+        border-radius: 50%;
+        margin: 0 0.5rem;
+        line-height: 20px;
+        &:hover {
+          background-color: $main-color;
+        }
+      }
+    }
+  }
+}

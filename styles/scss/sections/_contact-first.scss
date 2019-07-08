@@ -1,0 +1,40 @@
+#contact-first {
+  text-align: center;
+  h2 {
+    margin-top: 1rem;
+    font-size: 2rem;
+  }
+  p {
+    margin-bottom: 1.5rem;
+    font-size: 1.2rem;
+  }
+  .container form .fields {
+    display:grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-gap: 1rem;
+    &> *:last-child {
+      grid-column: 1 / span 2;
+    }
+    .input-field {
+      padding: 0.5rem 1rem;
+      max-height: 100px;
+    }
+  }
+  .container form .btn{
+    margin: 5rem 0 2rem 0;
+    width: 50%;
+  }
+}
+
+@media (max-width: 500px) {
+  #contact-first {
+    .container form  .fields {
+      display: block;
+      input, textarea {
+        display: block;
+        width: 100%;
+        margin-bottom: 1rem;
+      }
+    }
+  }
+}

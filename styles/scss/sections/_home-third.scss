@@ -1,0 +1,40 @@
+#home-third{
+ @extend %section-shared;
+  & i {
+    position: relative;
+    background-color: $dark-color;
+    color: text-color($dark-color) !important;
+    border-radius: 50%;
+    text-align: center;
+    padding: 2rem;
+    width: 134px;
+    height: 134px;
+    line-height: 70px;
+    transition: all 500ms;
+    margin-bottom: 2rem;
+    .number {
+      display: flex;
+      position: absolute;
+      font-size: 1.2rem;
+      background-color: $main-color;
+      border-radius: 50%;
+      justify-content: center;
+      align-items: center;
+      width: 45px;
+      height: 45px;
+      right: 0;
+      top: 0;
+    }
+    &:hover {
+      width: 150px;
+      height: 150px;
+      line-height: 85px;
+      background-color: $main-color;
+      .number {
+        background-color: $dark-color;
+        color: text-color($dark-color);
+      }
+    }
+  }
+
+}
