@@ -10,15 +10,15 @@ class TextWriter {
     this.word = this.words[this.wordIndex];
     this.type();
   }
-  type() {
+  _type() {
     // Type letter of the word, if previous letter was last start deleting
     if (this.letterIndex < this.word.length) {
       setTimeout(() => this._addLetter(), this.delay);
     } else {
-      setTimeout(() => this.remove(), this.delay);
+      setTimeout(() => this._remove(), this.delay);
     }
   }
-  remove() {
+  _remove() {
     //Remove letter
     setTimeout(() => this._removeLetter(), this.deleteDelay);
   }
