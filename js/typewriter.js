@@ -8,7 +8,7 @@ class TextWriter {
     this.letterIndex = 0;
     this.wordIndex = 0;
     this.word = this.words[this.wordIndex];
-    this.type();
+    this._type();
   }
   _type() {
     // Type letter of the word, if previous letter was last start deleting
@@ -26,7 +26,7 @@ class TextWriter {
   _addLetter() {
     this.output.textContent += `${this.word[this.letterIndex]}`;
     this.letterIndex++;
-    this.type();
+    this._type();
   }
   _removeLetter() {
     // Delete letters until end of the word, then move to a next word
@@ -42,7 +42,7 @@ class TextWriter {
         this.wordIndex++;
       }
       this.word = this.words[this.wordIndex];
-      this.type();
+      this._type();
     }
   }
 }
