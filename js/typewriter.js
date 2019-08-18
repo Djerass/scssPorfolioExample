@@ -33,7 +33,7 @@ class TextWriter {
     const text = this.output.textContent;
     if (text.length > 0) {
       this.output.textContent = text.slice(0, text.length - 1);
-      this.remove();
+      this._remove();
     } else {
       this.letterIndex = 0;
       if (this.wordIndex === this.words.length - 1) {
